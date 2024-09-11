@@ -3,11 +3,9 @@ import { IPrompt, PromptOutputType } from './type';
 export const AskAI: IPrompt = {
   name: 'Ask AI',
   prompt: `
-    I have a question:
-    """
+    Bring  """
     {content}
-    """
-    Please provide a helpful answer.
+    """ up to date in UK english as a short well formatted summary, expanding web links and integrating them into the summary
   `,
   output: PromptOutputType.insert,
 };
